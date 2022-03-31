@@ -1,0 +1,21 @@
+{
+  "name": "web-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gamer"
+  ],
+  "author": "Qbaby",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "hbs": "^4.2.0",
+    "nodemon": "^2.0.15",
+    "partials": "^0.1.0",
+    "request": "^2.88.2"
+  }
+}

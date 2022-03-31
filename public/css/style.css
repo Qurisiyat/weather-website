@@ -1,0 +1,33 @@
+body {
+    background: linear-gradient(to right, red, yellow);
+}
+h1{
+    color: purple;
+    margin-left: 600px;
+}
+.navbar{
+    width: 100%;
+    margin: 0%;
+    background-color: yellowgreen;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.topnav{
+    display: flex;
+    list-style: none;
+}
+li{
+    margin: 10px;
+    font-size: 20px;
+    font-weight: 5px;
+}
+.topright{
+    margin-left: 55%;
+}
+#input{
+width: 500px;
+margin-left: 500px;
+margin-top: 50px;
+padding: 20px;
+}
