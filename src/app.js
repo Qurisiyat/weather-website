@@ -4,7 +4,6 @@
  const request = require('request')
 const forecast= require('./forecast')
 const geocode= require('./geocode')
-
  const publicDir = path.join(__dirname, '../public')
 
  app.use(express.static(publicDir))
