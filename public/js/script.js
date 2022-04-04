@@ -13,7 +13,7 @@
             message2.textContent = ''
            const place = search.value
 
-        fetch("http://localhost:3000/weather?address=" + place).then((response)=>{
+        fetch("/weather?address=" + place).then((response)=>{
             response.json().then((data) => {
         if (data.error) {
             message1.textContent = data.error
