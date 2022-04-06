@@ -10,7 +10,11 @@ const forecast = (lattitude, longitude, callback) => {
             callback('address not found', undefined)
         }
         else{
-            const data ="The current temperature is " + response.body.current.temperature + "degrees. But it feels like" + response.body.current.feelslike + " degrees"
+            const time = response.body.location.localtime
+            const times = response.body.current.observation_time
+            const fore = response.body.current.weather_descriptions[0]
+            const data ="observation time: " + times + ". Local time: " + time + ". " + fore + ". The current temperature is " + response.body.current.temperature + "degree celsius. But it feels like" + response.body.current.feelslike + " degree celsuis"
+            
             callback(undefined, data)
         }   
     })   
