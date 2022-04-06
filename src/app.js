@@ -6,9 +6,8 @@ const forecast= require('./forecast')
 const geocode= require('./geocode')
  const publicDir = path.join(__dirname, '../public')
 
- const port = process.env(PORT) || 3000
-
  app.use(express.static(publicDir))
+ const port = process.env.PORT || 3000
 
  app.get('/weather', (req, res) =>{
      if(!req.query.address){
